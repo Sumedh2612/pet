@@ -1,0 +1,261 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Changed to Roboto for a cleaner, modern look */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #fdfdfd; /* Light background for a cleaner feel */
+    color: #2b2b2b; /* Darker text for better contrast */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #2b2b2b; /* Default dark color for text */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+a:hover {
+    color: #34b8e0; /* Bright cyan color on hover */
+}
+
+/* Header Styling */
+header {
+    background-color: #ffffff; /* Simple white background */
+    color: #2b2b2b; /* Dark text for contrast */
+    padding: 20px 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; /* Aligning links to the left */
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin-right: 30px; /* More space between links */
+}
+
+header ul li a {
+    color: #2b2b2b;
+    font-size: 1.2em;
+    font-weight: 500; /* A bit lighter font weight */
+    text-transform: capitalize; /* More relaxed than uppercase */
+}
+
+header ul li a:hover {
+    color: #34b8e0; /* Cyan hover effect */
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/hero.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    background-position: center;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+    font-size: 1.3em;
+    margin-bottom: 25px;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero .button {
+    background: #34b8e0;
+    color: white;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 35px;
+    font-size: 1.3em;
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.hero .button:hover {
+    background: #0296b3;
+    transform: translateY(-4px); /* Slight lift on hover */
+}
+
+/* Pet Grid */
+.pet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); /* More flexible columns */
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.pet-card {
+    border: 2px solid #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pet-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.pet-card h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin-bottom: 10px;
+}
+
+.pet-card p {
+    font-size: 1em;
+    color: #777;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background: #f7f7f7; /* Subtle gray background */
+    padding: 60px 20px;
+    text-align: center;
+    border-top: 3px solid #34b8e0; /* Cyan border for a modern touch */
+}
+
+.testimonials h1 {
+    margin-bottom: 30px;
+    font-size: 2.6em;
+    color: #2b2b2b;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.testimonial-card {
+    border-radius: 15px;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.testimonial-card strong {
+    font-size: 1.3em;
+    color: #2b2b2b;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    background: #2b2b2b;
+    color: white;
+    font-size: 1em;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(90deg, #34b8e0, #0296b3);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 40px;
+}
+
+.cta h2 {
+    font-size: 2.6em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.cta p {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.cta .button {
+    background: white;
+    color: #34b8e0;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 35px;
+    font-size: 1.3em;
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.cta .button:hover {
+    background: #34b8e0;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero h1,
+.hero p,
+.pet-card,
+.testimonial-card,
+.cta h2,
+.cta p {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Section Decorative Lines */
+section::before {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #34b8e0; /* Cyan color for accents */
+    margin: 20px auto;
+    border-radius: 10px;
+}
